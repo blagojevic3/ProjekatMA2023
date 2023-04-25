@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:alpha="1.0"
+    android:background="@drawable/pozadinamain"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+
+
+    <Button
+        android:id="@+id/nova_igraBtn"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="@string/nova_igra" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/samostalna_igraBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/samostalna_igra" />
+
+    <Button
+        android:id="@+id/rang_listaBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/rang_lista" />
+
+    <Button
+        android:id="@+id/lista_igaraBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/lista_igara" />
+
+    <Button
+        android:id="@+id/prijavaBtn"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#B313ACA8"
+        android:text="@string/prijava_btn" />
+
+
+</LinearLayout>

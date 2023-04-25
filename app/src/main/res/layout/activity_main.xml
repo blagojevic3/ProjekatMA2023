@@ -9,6 +9,7 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
+    android:background="@drawable/pozadinamain"
     >
 
     <LinearLayout
@@ -18,13 +19,13 @@
 
 
         <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/toolbar"
-            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/english_violet"
+            android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -41,9 +42,7 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         app:itemIconTint="@color/english_violet"
-        app:itemTextColor="@color/english_violet">
-
-    </com.google.android.material.navigation.NavigationView>
+        app:itemTextColor="@color/english_violet"/>
 
 
 

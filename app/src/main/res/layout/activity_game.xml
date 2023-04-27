@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical"
+    android:id="@+id/game_layout"
+    android:background="@drawable/games_bkg"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/oxford_blue"
+        android:alpha="0.8"
+        >
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerHeader"
+            android:name="com.example.projekatma2023.GameHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+</LinearLayout>

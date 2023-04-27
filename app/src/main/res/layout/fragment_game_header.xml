@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:alpha="0.8"
+    android:background="@color/oxford_blue"
+    android:orientation="vertical"
+    android:id="@+id/relativelayoutgame"
+
+    tools:context=".GameHeaderFragment">
+
+    <ImageView
+        android:id="@+id/player1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+
+
+        android:src="@drawable/header_profile" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/igrac1"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/player1"/>
+
+    <ImageView
+        android:id="@+id/player2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/header_profile"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/igrac2"
+        android:textColor="@color/white"
+        android:layout_marginRight="55dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/player2"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

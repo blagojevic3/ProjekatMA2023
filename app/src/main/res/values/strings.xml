@@ -7,8 +7,30 @@
     <string name="lista_igara">LISTA IGARA</string>
     <string name="prijava_btn">PRIJAVA</string>
 
+
+    <string name="igrac1">IGRAČ1</string>
+    <string name="igrac2">IGRAČ2</string>
+
+
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    IGRE-->
+    <string name="ko_zna_zna">KO ZNA ZNA</string>
+    <string name="spojnice">SPOJNICE</string>
+    <string name="asocijacije">ASOCIJACIJE</string>
+    <string name="skocko">SKOČKO</string>
+    <string name="korak_po_korak">KORAK PO KORAK</string>
+    <string name="moj_broj">MOJ BROJ</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

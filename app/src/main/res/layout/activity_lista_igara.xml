@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutListaIgara"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadinamain"
+    tools:context=".ListaIgaraActivity"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/ko_zna_znaBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="@string/ko_zna_zna" />
+
+    <Button
+        android:id="@+id/spojniceBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/spojnice" />
+
+    <Button
+        android:id="@+id/asocijacijeBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/asocijacije" />
+
+    <Button
+        android:id="@+id/skockoBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/skocko" />
+
+    <Button
+        android:id="@+id/korak_po_korakBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/korak_po_korak" />
+
+    <Button
+        android:id="@+id/moj_brojBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/moj_broj" />
+</LinearLayout>

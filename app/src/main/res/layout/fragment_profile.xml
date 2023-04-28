@@ -1,14 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    android:gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="540dp"
+        android:id="@+id/popUpLayout"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/login_register_bkg">
+
+
+
+        <LinearLayout
+            android:id="@+id/upperBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="7dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/closeButtonLayout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/closeButton"
+                    android:clickable="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/closeButtonLogo"
+                        android:background="@drawable/baseline_close_24"
+                        android:clickable="true">
+
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/popUpLayoutMiddle"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/popUpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dobrodošao, Igrač"
+            android:textAlignment="center"
+            android:textColor="@color/jordy_blue"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/header_profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"></ImageView>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/playerInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/usernameRowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/player_info_layout_border">
+                    <TextView
+                        android:id="@+id/usernameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Korisničko ime:"
+                        android:gravity="center"
+                        android:textSize="18dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/usernameInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="markoa002"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailRowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/player_info_layout_border">
+                    <TextView
+                        android:id="@+id/emailLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="E-mail:"
+                        android:gravity="center"
+                        android:textSize="16dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/emailInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="markoantonic@gmail.com"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="16dp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/popUpActions"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="70dp"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/editBtnLogo"
+                    android:background="@drawable/ic_edit"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/statsBtnLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="35dp"
+                    android:clickable="true"
+
+                    android:background="@drawable/ic_stats" />
+
+                <ImageView
+                    android:id="@+id/addFriendBtnLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_add_friend"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveBtnLayout"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sačuvaj"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+</LinearLayout>

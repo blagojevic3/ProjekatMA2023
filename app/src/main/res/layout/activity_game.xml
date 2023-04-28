@@ -14,15 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:background="@color/oxford_blue"
         android:alpha="0.8"
-        >
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerHeader"
-            android:name="com.example.projekatma2023.GameHeaderFragment"
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-    </RelativeLayout>
+        android:background="@color/oxford_blue"
+        android:orientation="horizontal"/>
 </LinearLayout>

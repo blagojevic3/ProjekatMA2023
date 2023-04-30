@@ -7,8 +7,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.Dialog;
+import android.content.ClipData;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -16,10 +23,17 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
+    Dialog loginDialog;
+    Dialog registerDialog;
+    Dialog profileDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loginDialog = new Dialog(this);
+        registerDialog= new Dialog(this);
+        profileDialog = new Dialog(this);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -38,6 +52,55 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
+
+    public void showLoginPopup(View v){
+
+        ImageView closeBtn;
+        TextView registerTxt;
+        closeBtn = (ImageView) loginDialog.findViewById(R.id.closeButtonLogo);
+        Button prijavaBtn;
+        Button prijavaBtnPopup;
+        loginDialog.setContentView(R.layout.activity_login);
+        closeBtn = (ImageView) loginDialog.findViewById(R.id.closeButtonLogo);
+        prijavaBtnPopup = (Button) loginDialog.findViewById(R.id.loginbtn);
+
+
+
+
+        closeBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                loginDialog.dismiss();
+            }
+        });
+        loginDialog.show();
+
+
+    }
+
+    public void showRegisterPopup(View v){
+        TextView registerTxt;
+        ImageView closeBtn;
+        TextView loginTxt;
+        loginTxt = (TextView)registerDialog.findViewById(R.id.logIn);
+        registerTxt = (TextView)loginDialog.findViewById(R.id.signUp);
+        closeBtn = (ImageView) registerDialog.findViewById(R.id.closeButtonLogo);
+        registerDialog.setContentView(R.layout.activity_register);
+
+
+//        closeBtn.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View view) {
+//                registerDialog.dismiss();
+//            }
+//        });
+        registerDialog.show();
+
+
+    }
+
 
 
 
@@ -71,4 +134,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
+
 }

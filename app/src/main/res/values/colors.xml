@@ -11,4 +11,8 @@
     <color name="oxford_blue">#191D32</color>
     <color name="oxford_blue_opacity">#80191D32</color>
     <color name="jordy_blue">#CC91C4F2</color>
+    <color name="slate_blue">#6665DD</color>
+    <color name="charcoal">#CC373F51</color>
+    <color name="red">#FF0F00</color>
+    <color name="potvrdi_yellow">#F7B32B</color>
 </resources>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KorakPoKorak"
+    android:background="@drawable/games_bkg">
+
+    <LinearLayout
+        android:id="@+id/stepByStepGameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gameExplainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#24328E">
+
+            <TextView
+                android:id="@+id/gameExplainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pogodi zadati pojam na osnovu sljedećih koraka: "
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/charcoal"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/gameTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pojam"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                tools:ignore="TextSizeCheck"></TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/step1MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence1Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:background="@color/white"
+                        android:text="Prvi korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step1PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step1Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:text="20"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step2MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence2Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Drugi korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step2PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step2Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="18"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step3MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence3Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Treći korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step3PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step3Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="16"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step4MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence4Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Četvrti korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step4PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step4Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="14"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step5MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence5Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Peti korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step5PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step5Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="12"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step6MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/step6Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence6Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Šesti korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step6PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step6Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="10"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step7MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp">
+
+            <RelativeLayout
+                android:id="@+id/step7Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sentence7Layout"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/sentence7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#011A40"
+                        android:text="Sedmi korak."
+                        android:gravity="center"
+                        android:textSize="17dp">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/step7PointsLayout"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/step7Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="8"
+                        android:textColor="#011A40"
+                        android:gravity="center"
+                        android:textSize="23dp">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/answerMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/answerLayout"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/input_field"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/answerInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:gravity="center"
+                    android:hint="Unesite Vaš odgovor..."
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#011A40"
+                    android:textColorHint="#757575"></EditText>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/confirmButtonMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="180dp">
+
+            <LinearLayout
+                android:id="@+id/confirmButtonLayout"
+                android:layout_width="130dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/confirmButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                    <TextView
+                        android:id="@+id/confirmTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="CONFIRM"
+                        android:textColor="#011A40"
+                        android:textSize="17dp"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

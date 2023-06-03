@@ -1,6 +1,7 @@
 package com.example.projekatma2023;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,6 +17,8 @@ public class HomeFragment extends Fragment {
 
     Button listaIgaraBtn;
     Activity context;
+    Button singlePlayerBtn;
+    Activity singlePlayerActivity = new SinglePlayerActivity();
 
 
 
@@ -35,6 +38,17 @@ public class HomeFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
 
         listaIgaraBtn = view.findViewById(R.id.lista_igaraBtn);
+        singlePlayerBtn = view.findViewById(R.id.samostalna_igraBtn);
+
+        singlePlayerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(),SinglePlayerActivity.class);
+                startActivity(i);
+            }
+        });
+
+
         listaIgaraBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +60,8 @@ public class HomeFragment extends Fragment {
             }
         });
         return view;
+
+
 
     }
 }

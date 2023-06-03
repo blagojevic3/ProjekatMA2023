@@ -82,12 +82,11 @@
                             android:id="@+id/matchingPair1LeftTxt"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="ELEMENT1"
+                            android:background="@color/slate_blue"
                             android:gravity="center"
-                            android:textSize="20dp"
+                            android:text="ELEMENT1"
                             android:textColor="@color/white"
-                            android:background="@color/slate_blue">
-                        </TextView>
+                            android:textSize="20dp"></TextView>
 
                     </LinearLayout>
 

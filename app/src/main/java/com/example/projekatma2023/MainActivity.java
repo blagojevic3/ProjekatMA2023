@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         loginDialog = new Dialog(this);
         registerDialog= new Dialog(this);
         profileDialog = new Dialog(this);
+
+
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);

@@ -1,155 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/games_bkg">
 
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/my_yellow_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081">
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="25dp"
+        android:id="@+id/linearLayout11"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
+        android:id="@+id/linearLayout14"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="360dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
+        android:id="@+id/linearLayout15"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="284dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="1dp"
+        android:id="@+id/linearLayout13"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="208dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
+        android:id="@+id/linearLayout12"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="144dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
-        android:background="@drawable/my_border"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
-        app:layout_constraintStart_toStartOf="parent">
+        <!-- Views here -->
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/skocko"
-
-            app:srcCompat="@drawable/skocko" />
-
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/skocko"
-
-            app:srcCompat="@drawable/skocko"/>
-
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/skocko"
-
-            app:srcCompat="@drawable/skocko" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/skocko"
-
-            app:srcCompat="@drawable/skocko" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="171dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="391dp"
-        android:layout_marginHorizontal="120dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="5dp"
-            android:src="@drawable/zuta_skocko"
-            android:id="@+id/zuta1"/>
+        <!-- Views here -->
 
-        <ImageView
-            android:id="@+id/zuta2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="5dp"
-            android:src="@drawable/zuta_skocko" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="5dp"
-            android:src="@drawable/zuta_skocko"
-            android:id="@+id/zuta3"/>
+    </LinearLayout>
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="5dp"
-            android:src="@drawable/zuta_skocko"
-            android:id="@+id/zuta4"/>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ImageViews here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout7">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout6">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout4">
+
+        <!-- Views here -->
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="410dp"
+        android:layout_width="350dp"
         android:layout_height="64dp"
         android:layout_marginTop="500dp"
         android:background="@drawable/my_yellow_border"
@@ -160,61 +218,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <ImageView
-            android:id="@+id/imageView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <ImageView
-            android:id="@+id/imageView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/_0x50"
-            app:srcCompat="@drawable/_0x50" />
-
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Submit" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout8" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>

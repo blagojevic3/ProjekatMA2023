@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280678972165",
+    "project_id": "projekatma2023",
+    "storage_bucket": "projekatma2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280678972165:android:1e9e0a882f0861473cd56c",
+        "android_client_info": {
+          "package_name": "com.example.projekatma2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280678972165-ij0einu902li4l79bvmte93h1iubjesc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcO5bAqB3-Dn2BKwERNltteEwm4ShhUHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280678972165-ij0einu902li4l79bvmte93h1iubjesc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

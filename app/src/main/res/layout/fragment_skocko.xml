@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/games_bkg">
 
+
     <LinearLayout
-        android:id="@+id/linearLayout9"
+        android:id="@+id/symbols"
         android:layout_width="350dp"
         android:layout_height="64dp"
         android:layout_marginTop="500dp"
@@ -19,19 +20,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081">
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/skocko"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/skocko" />
+
+        <ImageView
+            android:id="@+id/pik"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/pik" />
+
+        <ImageView
+            android:id="@+id/tref"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/tref" />
+
+        <ImageView
+            android:id="@+id/karo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/karo" />
+
+        <ImageView
+            android:id="@+id/herc"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/herc" />
+
+        <ImageView
+            android:id="@+id/zvijezda"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:src="@drawable/star_borderless" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout11"
+        android:id="@+id/linearLayout12"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="72dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
         app:layout_constraintTop_toTopOf="@id/linearLayout1">
 
         <!-- Views here -->
@@ -39,14 +88,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout14"
+        android:id="@+id/linearLayout16"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="360dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
         app:layout_constraintTop_toTopOf="@id/linearLayout1">
 
         <!-- Views here -->
@@ -61,6 +110,21 @@
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintStart_toEndOf="@+id/linearLayout4"
         app:layout_constraintTop_toTopOf="@id/linearLayout1">
 
@@ -72,26 +136,11 @@
         android:id="@+id/linearLayout13"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="208dp"
-        android:background="@drawable/my_border"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
-        app:layout_constraintTop_toTopOf="@id/linearLayout1">
-
-        <!-- Views here -->
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout12"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
         android:layout_marginTop="144dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
         app:layout_constraintTop_toTopOf="@id/linearLayout1">
 
         <!-- Views here -->
@@ -99,7 +148,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout11"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="44dp"
@@ -131,7 +180,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/linearLayout2"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="12dp"
@@ -146,7 +195,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout6"
+        android:id="@+id/linearLayout3"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="12dp"
@@ -154,22 +203,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout7">
-
-        <!-- Views here -->
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/my_border"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout6">
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2">
 
         <!-- Views here -->
 
@@ -179,19 +213,19 @@
         android:id="@+id/linearLayout4"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/my_border"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
 
         <!-- Views here -->
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout5"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -206,7 +240,22 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout8"
+        android:id="@+id/linearLayout6"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+
+        <!-- Views here -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/solutionLayout"
         android:layout_width="350dp"
         android:layout_height="64dp"
         android:layout_marginTop="500dp"
@@ -216,7 +265,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578">
 
     </LinearLayout>
 
@@ -229,6 +279,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout8" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

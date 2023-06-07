@@ -467,14 +467,14 @@
                     android:clickable="true"
                     tools:ignore="TouchTargetSizeCheck">
 
-                    <TextView
-                        android:id="@+id/confirmTxt"
+                    <Button
+                        android:id="@+id/confirmBtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="CONFIRM"
                         android:textColor="#011A40"
-                        android:textSize="17dp"></TextView>
+                        android:textSize="17dp"></Button>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

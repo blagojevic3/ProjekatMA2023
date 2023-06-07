@@ -5,9 +5,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.TextView;
+
+import com.example.projekatma2023.baza.DBUtil;
+
+import org.w3c.dom.Text;
 
 public class SinglePlayerActivity extends AppCompatActivity implements FragmentManager.OnBackStackChangedListener {
 
@@ -15,11 +20,13 @@ public class SinglePlayerActivity extends AppCompatActivity implements FragmentM
     private CountDownTimer countDownTimer;
     private Fragment currentFragment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
 
+        DBUtil.selectAsocijacije();
         getSupportFragmentManager().addOnBackStackChangedListener(this);
 
         if (savedInstanceState == null) {
@@ -28,7 +35,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements FragmentM
         }
 
         timerTextView = findViewById(R.id.timer);
-
         startCountdownTimer();
     }
 
@@ -54,7 +60,13 @@ public class SinglePlayerActivity extends AppCompatActivity implements FragmentM
 
             @Override
             public void onFinish() {
-                switchToNextFragment();
+                if (currentFragment instanceof MojBrojFragment) {
+                    Intent intent = new Intent(SinglePlayerActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    switchToNextFragment();
+                }
             }
         };
 
@@ -65,9 +77,11 @@ public class SinglePlayerActivity extends AppCompatActivity implements FragmentM
         if (fragment instanceof AsocijacijeFragment) {
             return 120000; // 120 seconds for AsocijacijeFragment
         } else if (fragment instanceof SkockoFragment) {
-            return 60000; // 60 seconds for SkockoFragment
+            return 30000; // 30 seconds for SkockoFragment
         } else if (fragment instanceof KorakPoKorak) {
             return 70000; // 70 seconds for KorakPoKorak
+        } else if (fragment instanceof MojBrojFragment) {
+            return 60000;
         } else {
             return 60000; // Default case: 60 seconds for other fragments
         }
@@ -100,4 +114,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements FragmentM
         currentFragment = nextFragment;
         startCountdownTimer();
     }
+
+
 }
